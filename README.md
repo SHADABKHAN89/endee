@@ -1,7 +1,7 @@
 # AI Resume Analyzer using RAG + Job Matching
 
 ## 📌 Overview
-This project is an AI-powered Resume Analyzer that uses semantic search and embeddings to evaluate resumes and match them with job descriptions.
+This project is an AI-powered Resume Analyzer that uses semantic search and embedding-based similarity to evaluate resumes and match them with job descriptions.
 
 ---
 
@@ -32,10 +32,9 @@ This system:
 1. Resume uploaded
 2. Text extracted and chunked
 3. Embeddings generated
-4. Stored in vector store
-5. User query → semantic search
-6. Job description → similarity score
-7. Final recommendation generated
+4. Semantic search performed
+5. Job description matched
+6. Score + recommendation generated
 
 ---
 
@@ -43,14 +42,13 @@ This system:
 - Resume Upload (PDF)
 - Semantic Search (RAG)
 - Candidate Q&A
-- Job Match Score (0–100%)
+- Job Match Score
 - Hiring Recommendation
 
 ---
 
 ## 🚀 Setup Instructions
 
-### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/ai-resume-analyzer
-cd ai-resume-analyzer
+pip install -r requirements.txt
+python -m streamlit run app.py
